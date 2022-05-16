@@ -585,6 +585,8 @@ export default class PinchZoomPan extends React.Component {
     }
 
     get controlOverscrollViaCss() {
+        console.log(window)
+        console.log(window.CSS)
         return window.CSS && window.CSS.supports('touch-action', 'pan-up');
     }
 
